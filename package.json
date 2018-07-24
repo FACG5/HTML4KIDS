@@ -1,0 +1,26 @@
+{
+  "name": "HTML4KIDS",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape ./public/js/test.js",
+    "node": "nodemon ./src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FACG5/HTML4KIDS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FACG5/HTML4KIDS/issues"
+  },
+  "homepage": "https://github.com/FACG5/HTML4KIDS#readme",
+  "devDependencies": {
+    "nodemon": "^1.18.3",
+    "tap-spec": "^5.0.0",
+    "tape": "^4.9.1"
+  }
+}
