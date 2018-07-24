@@ -1,0 +1,73 @@
+{
+  "title" : {
+    "definition" : "The <title> tag is required in all HTML documents and it defines the title of the document.",
+    "usage" : "defines a title in the browser toolbar /n provides a title for the page when it is added to favorites /n displays a title for the page in search-engine results",
+    "url" : "https://www.w3schools.com/tags/tag_title.asp",
+    "example" : "https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_basic"
+  },
+
+  "article" : {
+    "definition" : "The <article> tag specifies independent, self-contained content.",
+    "usage" : "An article should make sense on its own and it should be possible to distribute it independently from the rest of the site. ",
+    "url" : "https://www.w3schools.com/tags/tag_article.asp",
+    "example" : "https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_article"
+  },
+
+  "head" : {
+    "definition" : "The <head> element is a container for metadata (data about data) and is placed between the <html> tag and the <body> tag.",
+    "usage" : "HTML metadata is data about the HTML document. Metadata is not displayed. ",
+    "url" : "https://www.w3schools.com/HTML/html_head.asp",
+    "example" : "https://www.w3schools.com/HTML/tryit.asp?filename=tryhtml_head_title"
+  },
+
+  "style" : {
+    "definition" : "The <style> tag is used to define style information for an HTML document.",
+    "usage" : "Inside the <style> element you specify how HTML elements should render in a browser",
+    "url" : "https://www.w3schools.com/tags/tag_style.asp",
+    "example" : "https://www.w3schools.com/css/tryit.asp?filename=trycss_default"
+  },
+
+
+  "footer" : {
+    "definition" : "The <footer> tag defines a footer for a document or section..",
+    "usage" : "A <footer> element should contain information about its containing element.",
+    "url" : "https://www.w3schools.com/tags/tag_hn.asp",
+    "example" : "https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_h1_default_css"
+  },
+
+  "nav" : {
+    "definition" : "The <nav> tag defines a set of navigation links.",
+    "usage" : "Notice that NOT all links of a document should be inside a <nav> element. The <nav> element is intended only for major block of navigation links.",
+    "url" : "https://www.w3schools.com/tags/tag_nav.asp",
+    "example" : "https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_nav"
+  },
+
+  "span" : {
+    "definition" : "The <span> tag is used to group inline-elements in a document .",
+    "usage" : "The <span> tag provides a way to add a hook to a part of a text or a part of a document.",
+    "url" : "https://www.w3schools.com/tags/tag_span.asp",
+    "example" : "https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_span"
+  },
+
+  "li" : {
+    "definition" : "The <li> tag defines a list item.",
+    "usage" : "The <li> tag is used in ordered lists(<ol>), unordered lists (<ul>), and in menu lists (<menu>).",
+    "url" : "https://www.w3schools.com/tags/tag_li.asp",
+    "example" : "https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_list_test"
+  },
+
+  "div" : {
+    "definition" : "The <div> tag defines a division or a section in an HTML document.",
+    "usage" : "The <div> element is often used as a container for other HTML elements to style them with CSS or to perform certain tasks with JavaScript.",
+    "url" : "https://www.w3schools.com/tags/tag_div.asp",
+    "example" : "https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_div_test"
+  },
+
+  "button" : {
+    "definition" : "The <button> tag defines a clickable button.",
+    "usage" : "Inside a <button> element you can put content, like text or images. This is the difference between this element and buttons created with the <input> element",
+    "url" : "https://www.w3schools.com/tags/tag_button.asp",
+    "example" : "https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_button_test"
+  }
+}
+
