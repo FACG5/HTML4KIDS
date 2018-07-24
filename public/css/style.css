@@ -32,7 +32,7 @@
     margin: 0 auto 50px;
 }
 
-.main-section .overlay input{
+.main-section .overlay input[type=text]{
   width: 400px;
   box-sizing: border-box;
   border: 2px solid #ccc;
@@ -48,38 +48,60 @@
 }
 
 
-.main-section .overlay input:focus {
-    width: 70%;
+.main-section .overlay input[type=text]:focus {
+    width: 500px;
     padding: 8px 20px 8px 40px;
   }
 
 
+  .main-section .overlay input[type=submit] {
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 5px;
+    font-weight: bold;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Auto Complete */
+
 .autocomplete {
-    /*the container must be positioned relative:*/
     position: relative;
     display: inline-block;
 }
-/*input {*/
-    /*border: 1px solid transparent;*/
-    /*background-color: #f1f1f1;*/
-    /*padding: 10px;*/
-    /*font-size: 16px;*/
-/*}*/
-/*input[type=text] {*/
-    /*background-color: #f1f1f1;*/
-    /*width: 100%;*/
-/*}*/
-/*input[type=submit] {*/
-    /*background-color: DodgerBlue;*/
-    /*color: #fff;*/
-/*}*/
 .autocomplete-items {
     position: absolute;
     border: 1px solid #d4d4d4;
     border-bottom: none;
     border-top: none;
     z-index: 99;
-    /*position the autocomplete items to be the same width as the container:*/
     top: 100%;
     left: 0;
     right: 0;

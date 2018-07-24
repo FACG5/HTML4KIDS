@@ -26,12 +26,11 @@ function serveFiles(req, res){
         css: 'text/css',
         js: 'application/javascript',
         ico: 'image/x-icon',
+        jpg: 'image/jpg'
     };
-    fs.readFile(path.join(__dirname ,"..",url),function(err,file){
+    fs.readFile(path.join(__dirname ,"..", "public" ,url),function(err,file){
        if(err){
-        res.writeHead(500, {'content-type': 'text/plain'});
-        console.log(err);
-        res.end();           
+        console.log(err);     
        } else{
         res.writeHead(200, {'content-type': extensionType[extension]});
         res.end(file);
