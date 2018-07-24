@@ -1,18 +1,4 @@
 {
-  "head" : {
-      "definition" : "The <head> element is a container for metadata (data about data) and is placed between the <html> tag and the <body> tag.",
-      "usage" : "HTML metadata is data about the HTML document. Metadata is not displayed. ",
-      "url" : "https://www.w3schools.com/HTML/html_head.asp",
-      "example" : "https://www.w3schools.com/HTML/tryit.asp?filename=tryhtml_head_title"
-  },
-
-  "style" : {
-    "definition" : "The <style> tag is used to define style information for an HTML document.",
-    "usage" : "Inside the <style> element you specify how HTML elements should render in a browser",
-    "url" : "https://www.w3schools.com/tags/tag_style.asp",
-    "example" : "https://www.w3schools.com/css/tryit.asp?filename=trycss_default"
-  },
-
   "title" : {
     "definition" : "The <title> tag is required in all HTML documents and it defines the title of the document.",
     "usage" : "defines a title in the browser toolbar /n provides a title for the page when it is added to favorites /n displays a title for the page in search-engine results",
@@ -26,6 +12,21 @@
     "url" : "https://www.w3schools.com/tags/tag_article.asp",
     "example" : "https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_article"
   },
+
+  "head" : {
+    "definition" : "The <head> element is a container for metadata (data about data) and is placed between the <html> tag and the <body> tag.",
+    "usage" : "HTML metadata is data about the HTML document. Metadata is not displayed. ",
+    "url" : "https://www.w3schools.com/HTML/html_head.asp",
+    "example" : "https://www.w3schools.com/HTML/tryit.asp?filename=tryhtml_head_title"
+  },
+
+  "style" : {
+    "definition" : "The <style> tag is used to define style information for an HTML document.",
+    "usage" : "Inside the <style> element you specify how HTML elements should render in a browser",
+    "url" : "https://www.w3schools.com/tags/tag_style.asp",
+    "example" : "https://www.w3schools.com/css/tryit.asp?filename=trycss_default"
+  },
+
 
   "footer" : {
     "definition" : "The <footer> tag defines a footer for a document or section..",
