@@ -4,18 +4,26 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node src/server.js"
+
+    "start": "node src/server.js",
+    "test": "tape ./public/js/test.js",
+    "dev": "nodemon ./src/server.js"
 
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/FACG5/HTML4KIDS.git"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/FACG5/HTML4KIDS/issues"
   },
-  "homepage": "https://github.com/FACG5/HTML4KIDS#readme"
+  "homepage": "https://github.com/FACG5/HTML4KIDS#readme",
+  "devDependencies": {
+    "nodemon": "^1.18.3",
+    "tap-spec": "^5.0.0",
+    "tape": "^4.9.1"
+  }
 }
