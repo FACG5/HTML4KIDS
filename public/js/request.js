@@ -4,6 +4,7 @@ const connect = function(value, method, url, cb) {
   xhr.onreadystatechange = function() {
     if (xhr.readyState == 4 && xhr.status == 200) {
       var response = JSON.parse(xhr.responseText);
+      console.log(response);
       cb(response);
     }
   };
