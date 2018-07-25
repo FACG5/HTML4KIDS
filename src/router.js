@@ -1,4 +1,3 @@
-
 const handlers = require('./handlers.js');
 
 
@@ -12,18 +11,15 @@ function router(request, response) {
 
     handlers.serveHome(request, response);
 
-  } else if (extension === 'css' || extension === 'js' || extension === 'html' || extension === 'ico') {
-   
-    handlers.serveFiles(request, response);
- 
-} else if (url.indexOf('/api/suggestions') !== -1) {
+  } else if (url.indexOf('/api/suggestions') !== -1) {
    
     handlers.serveAPI(request, response);
   
-} else {
-  
-    handlers.pageNotFound(request, response);
-  }
+} else  {
+   
+    handlers.serveFiles(request, response);
+ 
+} 
 };
 
 module.exports = router;
