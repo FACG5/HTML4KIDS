@@ -43,9 +43,10 @@ function serveAPI(req, res) {
     like += chunkOfData;
   });
   req.on("end", function() {
-    // var result = filterJson(obj,like);
+    var result = filterJson(mainJson,like);
     res.writeHead(200, { "content-type": "application/json" });
-    res.end(JSON.stringify(mainJson));
+    console.log(result);
+    res.end(JSON.stringify(result));
   });
 }
 
