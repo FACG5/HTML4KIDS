@@ -71,8 +71,14 @@
 
 
 
+#infodiv{
+    margin: 50px auto;
+}
 
 
+#infodiv p{
+    color:white;
+}
 
 
 

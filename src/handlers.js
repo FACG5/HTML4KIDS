@@ -2,6 +2,8 @@ var http = require("http");
 var fs = require("fs");
 var filterJson = require("./logic.js");
 var mainJson = require("./html_tags.json");
+var infoObject = require("./html.json");
+
 var path = require("path");
 
 function serveHome(req, res) {
@@ -50,4 +52,21 @@ function serveAPI(req, res) {
   });
 }
 
-module.exports = { serveHome, serveFiles, serveAPI };
+function serveInfoAPI(req, res) {
+  var tag = "";
+  req.on("data", function(chunkOfData) {
+    tag += chunkOfData;
+  });
+  req.on("end", function() {
+    res.writeHead(200, { "content-type": "Text/plain" });
+    // console.log(tag);
+    // console.log(JSON.stringify(infoObject[tag]));
+    // console.log(typeof infoObject);
+    // console.log(infoObject);
+
+    res.end(JSON.stringify(infoObject[tag]));
+  });
+}
+
+
+module.exports = { serveHome, serveFiles, serveAPI, serveInfoAPI };

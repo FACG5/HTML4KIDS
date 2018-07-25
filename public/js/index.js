@@ -1,6 +1,6 @@
 var currentFocus;
 var inp = document.getElementById("myInput");
-
+var infodiv = document.getElementById("infodiv");
 inp.addEventListener("input", function(e) {
   var val = inp.value;
 
@@ -31,6 +31,43 @@ inp.addEventListener("input", function(e) {
 
           b.addEventListener("click", function(e) {
             inp.value = this.getElementsByTagName("input")[0].value;
+            /////to be added here
+            connect(inp.value,'POST','/api/info',function(response){
+
+              infodiv.innerHTML = "";
+              var definition_title = document.createElement('h2');
+              var usage_title = document.createElement('h2');
+              var url_title = document.createElement('h2');
+              var example_title = document.createElement('h2');
+
+              definition_title.textContent = 'Definition'
+              usage_title.textContent = 'Usage'
+              url_title.textContent = 'URL'
+              example_title.textContent = 'Example'
+
+              var definition = document.createElement('p');
+              var usage = document.createElement('p');
+              var url = document.createElement('p');
+              var example = document.createElement('p');
+
+              definition.textContent = response.definition;
+              usage.textContent = response.usage;
+              url.textContent = response.url;
+              example.textContent = response.example;
+
+              infodiv.appendChild(definition_title);
+              infodiv.appendChild(definition);
+
+              infodiv.appendChild(usage_title);
+              infodiv.appendChild(usage);
+
+              infodiv.appendChild(url_title);
+              infodiv.appendChild(url);
+              
+              infodiv.appendChild(example_title);
+              infodiv.appendChild(example);
+
+            });
             closeAllLists();
           });
           a.appendChild(b);

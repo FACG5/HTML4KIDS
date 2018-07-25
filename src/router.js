@@ -9,7 +9,10 @@ function router(request, response) {
     handlers.serveHome(request, response);
   } else if (url.indexOf("/api/suggestions") !== -1) {
     handlers.serveAPI(request, response);
-  } else {
+  }else if(url.indexOf("/api/info")!== -1) {
+    handlers.serveInfoAPI(request, response);
+  }
+  else {
     handlers.serveFiles(request, response);
   }
 }
