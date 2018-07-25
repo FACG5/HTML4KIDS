@@ -3,6 +3,7 @@ var inp = document.getElementById("myInput");
 var infodiv = document.getElementById("infodiv");
 inp.addEventListener("input", function(e) {
   var val = inp.value;
+    infodiv.style.display = "none";
 
   connect(
     val,
@@ -33,44 +34,52 @@ inp.addEventListener("input", function(e) {
             inp.value = this.getElementsByTagName("input")[0].value;
             /////to be added here
             connect(inp.value,'POST','/api/info',function(response){
+                if(response !== "") {
+                    infodiv.textContent = "";
+                    infodiv.style.display = "block";
+                    var definition_title = document.createElement('h3');
+                    var usage_title = document.createElement('h3');
+                    var url_title = document.createElement('h3');
+                    var example_title = document.createElement('h3');
 
-              infodiv.textContent = "";
-              infodiv.style.display = "block";
-              var definition_title = document.createElement('h3');
-              var usage_title = document.createElement('h3');
-              var url_title = document.createElement('h3');
-              var example_title = document.createElement('h3');
+                    definition_title.textContent = 'Definition';
+                    usage_title.textContent = 'Usage';
+                    url_title.textContent = 'URL';
+                    example_title.textContent = 'Example';
 
-              definition_title.textContent = 'Definition';
-              usage_title.textContent = 'Usage';
-              url_title.textContent = 'URL';
-              example_title.textContent = 'Example';
+                    var definition = document.createElement('p');
+                    var usage = document.createElement('p');
+                    var url = document.createElement('a');
+                    url.href = response.url;
+                    url.target = '_blank';
+                    var example = document.createElement('a');
+                    example.href = response.url;
+                    example.target = '_blank';
+                    definition.textContent = response.definition;
+                    usage.textContent = response.usage;
+                    url.textContent = response.url;
+                    example.textContent = response.example;
 
-              var definition = document.createElement('p');
-              var usage = document.createElement('p');
-              var url = document.createElement('a');
-              url.href = response.url;
-              url.target = '_blank';
-              var example = document.createElement('a');
-                example.href = response.url;
-                example.target = '_blank';
-              definition.textContent = response.definition;
-              usage.textContent = response.usage;
-              url.textContent = response.url;
-              example.textContent = response.example;
+                    infodiv.appendChild(definition_title);
+                    infodiv.appendChild(definition);
 
-              infodiv.appendChild(definition_title);
-              infodiv.appendChild(definition);
+                    infodiv.appendChild(usage_title);
+                    infodiv.appendChild(usage);
 
-              infodiv.appendChild(usage_title);
-              infodiv.appendChild(usage);
+                    infodiv.appendChild(url_title);
+                    infodiv.appendChild(url);
 
-              infodiv.appendChild(url_title);
-              infodiv.appendChild(url);
-              
-              infodiv.appendChild(example_title);
-              infodiv.appendChild(example);
+                    infodiv.appendChild(example_title);
+                    infodiv.appendChild(example);
+                }
+                else{
 
+                    infodiv.textContent = "";
+                    infodiv.style.display = "block";
+                    var noReslut = document.createElement('h3');
+                    noReslut.textContent = "Sorry, The Site is under Development!! ^_^";
+                    infodiv.appendChild(noReslut);
+                }
 
             });
             closeAllLists();

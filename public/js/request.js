@@ -3,8 +3,12 @@ const connect = function(value, method, url, cb) {
   const xhr = new XMLHttpRequest();
   xhr.onreadystatechange = function() {
     if (xhr.readyState == 4 && xhr.status == 200) {
-      var response = JSON.parse(xhr.responseText);
-      console.log(response);
+      var response;
+      if (xhr.responseText !== "") {
+        response = JSON.parse(xhr.responseText);
+      } else {
+        response = "";
+      }
       cb(response);
     }
   };
