@@ -58,25 +58,25 @@ As a **user Looking forward to enjoying and searching easy**
 <!-- -->
 >So that **I can understand the sites content easily on whatever device I choose to view it in**
 
-As a **user learning the html tag **
+As a **user learning the html tag**
 >I want to **view example**
 <!-- -->
 >So that **I can understand the definition and usage**
 
-As a **user learning the html tag **
+As a **user learning the html tag**
 >I want to **autocomplete the input**
 <!-- -->
 >So that **I can view all tags**
 
-As a **user **
->I want to **start typing in the input box **
+As a **user**
+>I want to **start typing in the input box**
 <!-- -->
 >So that **I can see updated results and I continue typing**
 
-As a **user **
->I want to **start typing in the input box **
+As a **user**
+>I want to **start typing in the input box**
 <!-- -->
->So that ** I can learn HTML (Hypertext Markup Language)**
+>So that **I can learn HTML (Hypertext Markup Language)**
 
 ---
 
