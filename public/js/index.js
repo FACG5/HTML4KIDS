@@ -30,7 +30,7 @@ inp.addEventListener("input", function(e) {
           b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
 
           b.addEventListener("click", function(e) {
-            inp.value = b.getElementsByTagName("input")[0].value;
+            inp.value = this.getElementsByTagName("input")[0].value;
             closeAllLists();
           });
           a.appendChild(b);
