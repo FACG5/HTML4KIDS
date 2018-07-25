@@ -1,25 +1,17 @@
-const handlers = require('./handlers.js');
-
+const handlers = require("./handlers.js");
 
 function router(request, response) {
-
   const url = request.url;
 
-  const extension = url.split('.')[1];
+  const extension = url.split(".")[1];
 
-  if (url === '/') {
-
+  if (url === "/") {
     handlers.serveHome(request, response);
-
-  } else if (url.indexOf('/api/suggestions') !== -1) {
-   
+  } else if (url.indexOf("/api/suggestions") !== -1) {
     handlers.serveAPI(request, response);
-  
-} else  {
-   
+  } else {
     handlers.serveFiles(request, response);
- 
-} 
-};
+  }
+}
 
 module.exports = router;

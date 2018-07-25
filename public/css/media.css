@@ -1,0 +1,388 @@
+@media only screen and (max-width: 600px){
+	* {
+        padding: 0;
+        margin: 0;
+        font-family: 'Cairo', sans-serif;
+    }
+    
+    .container {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .main-section {
+        background: url(../img/bg1.jpg);
+        min-height: 700px;
+        background-size: cover;
+    }
+    
+    .main-section .overlay {
+        min-height: 700px;
+        background: rgba(0,0,0,0.4);
+        text-align: center;
+        padding-top: 50px;
+    }
+    .main-section .overlay h2{
+        color: #FFF;
+        border-bottom:1px solid;
+        width:80%;
+        margin: 0 auto 10px;
+    }
+    
+    .main-section .overlay input[type=text]{
+      width: 350px;
+      box-sizing: border-box;
+      border: 2px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+      background-color: white;
+      background-position: 10px 10px;
+      background-repeat: no-repeat;
+      padding: 4px 20px 4px 40px;
+      -webkit-transition:0.4s ease-in-out;
+      transition:0.4s ease-in-out;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+    .main-section .overlay input[type=text]:focus {
+        width:350px;
+        padding: 8px 20px 8px 40px;
+      }
+    
+    
+      .main-section .overlay input[type=submit] {
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+        background-color: white;
+        background-position: 10px 10px;
+        background-repeat: no-repeat;
+        padding: 5px;
+        font-weight: bold;
+      } 
+    
+    /* Auto Complete */    
+    .autocomplete {
+        position: relative;
+        display: inline-block;
+    }
+    .autocomplete-items {
+        position: absolute;
+        border: 1px solid #d4d4d4;
+        border-bottom: none;
+        border-top: none;
+        z-index: 99;
+        top: 100%;
+        left: 0;
+        right: 0;
+    }
+    .autocomplete-items div {
+        padding: 10px;
+        cursor: pointer;
+        background-color: #fff;
+        border-bottom: 1px solid #d4d4d4;
+    }
+    .autocomplete-items div:hover {
+        /*when hovering an item:*/
+        background-color: #e9e9e9;
+    }
+    .autocomplete-active {
+        /*when navigating through the items using the arrow keys:*/
+        background-color: DodgerBlue !important;
+        color: #ffffff;
+    }
+}
+/*****************************************************************************/
+@media(min-width:601px) 
+and (max-width:900px){
+    * {
+        padding: 0;
+        margin: 0;
+        font-family: 'Cairo', sans-serif;
+    }
+    
+    .container {
+        width: 100%;
+        margin: 0 auto;
+    }   
+    
+    .main-section {
+        background: url(../img/bg1.jpg);
+        min-height: 700px;
+        background-size: cover;
+    }
+    
+    .main-section .overlay {
+        min-height: 700px;
+        background: rgba(0,0,0,0.4);
+        text-align: center;
+        padding-top: 50px;
+    }
+    .main-section .overlay h2{
+        color: #FFF;
+        border-bottom:1px solid;
+        width: 70%;
+        margin: 0 auto 50px;
+    }
+    
+    .main-section .overlay input[type=text]{
+      width: 400px;
+      box-sizing: border-box;
+      border: 2px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+      background-color: white;
+      background-position: 10px 10px;
+      background-repeat: no-repeat;
+      padding: 4px 20px 4px 40px;
+      -webkit-transition:0.4s ease-in-out;
+      transition:0.4s ease-in-out;
+      font-weight: bold;
+    }
+    
+    
+    .main-section .overlay input[type=text]:focus {
+        width: 500px;
+        padding: 8px 20px 8px 40px;
+      }
+    
+    
+      .main-section .overlay input[type=submit] {
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+        background-color: white;
+        background-position: 10px 10px;
+        background-repeat: no-repeat;
+        padding: 5px;
+        font-weight: bold;
+      }    
+    /* Auto Complete */
+    
+    .autocomplete {
+        position: relative;
+        display: inline-block;
+    }
+    .autocomplete-items {
+        position: absolute;
+        border: 1px solid #d4d4d4;
+        border-bottom: none;
+        border-top: none;
+        z-index: 99;
+        top: 100%;
+        left: 0;
+        right: 0;
+    }
+    .autocomplete-items div {
+        padding: 10px;
+        cursor: pointer;
+        background-color: #fff;
+        border-bottom: 1px solid #d4d4d4;
+    }
+    .autocomplete-items div:hover {
+        /*when hovering an item:*/
+        background-color: #e9e9e9;
+    }
+    .autocomplete-active {
+        /*when navigating through the items using the arrow keys:*/
+        background-color: DodgerBlue !important;
+        color: #ffffff;
+    }
+}
+/*****************************************************************************/
+@media(min-width:900px) 
+and (max-width:1000px){
+    * {
+        padding: 0;
+        margin: 0;
+        font-family: 'Cairo', sans-serif;
+    }
+    
+    .container {
+        width: 100%;
+        margin: 0 auto;
+    }   
+    
+    .main-section {
+        background: url(../img/bg1.jpg);
+        min-height: 700px;
+        background-size: cover;
+    }
+    
+    .main-section .overlay {
+        min-height: 700px;
+        background: rgba(0,0,0,0.4);
+        text-align: center;
+        padding-top: 50px;
+    }
+    .main-section .overlay h2{
+        color: #FFF;
+        border-bottom:1px solid;
+        width: 50%;
+        margin: 0 auto 50px;
+    }
+    
+    .main-section .overlay input[type=text]{
+      width: 400px;
+      box-sizing: border-box;
+      border: 2px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+      background-color: white;
+      background-position: 10px 10px;
+      background-repeat: no-repeat;
+      padding: 4px 20px 4px 40px;
+      -webkit-transition:0.4s ease-in-out;
+      transition:0.4s ease-in-out;
+      font-weight: bold;
+    }
+    
+    
+    .main-section .overlay input[type=text]:focus {
+        width: 500px;
+        padding: 8px 20px 8px 40px;
+      }
+    
+    
+      .main-section .overlay input[type=submit] {
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+        background-color: white;
+        background-position: 10px 10px;
+        background-repeat: no-repeat;
+        padding: 5px;
+        font-weight: bold;
+      }   
+    /* Auto Complete */
+    
+    .autocomplete {
+        position: relative;
+        display: inline-block;
+    }
+    .autocomplete-items {
+        position: absolute;
+        border: 1px solid #d4d4d4;
+        border-bottom: none;
+        border-top: none;
+        z-index: 99;
+        top: 100%;
+        left: 0;
+        right: 0;
+    }
+    .autocomplete-items div {
+        padding: 10px;
+        cursor: pointer;
+        background-color: #fff;
+        border-bottom: 1px solid #d4d4d4;
+    }
+    .autocomplete-items div:hover {
+        /*when hovering an item:*/
+        background-color: #e9e9e9;
+    }
+    .autocomplete-active {
+        /*when navigating through the items using the arrow keys:*/
+        background-color: DodgerBlue !important;
+        color: #ffffff;
+    }
+}
+/***************************************************/
+@media(min-width:1000px) 
+    and (max-width:1500px){
+    * {
+        padding: 0;
+        margin: 0;
+        font-family: 'Cairo', sans-serif;
+    }
+    
+    .container {
+        width: 100%;
+        margin: 0 auto;
+    }   
+    
+    .main-section {
+        background: url(../img/bg1.jpg);
+        min-height: 700px;
+        background-size: cover;
+    }
+    
+    .main-section .overlay {
+        min-height: 700px;
+        background: rgba(0,0,0,0.4);
+        text-align: center;
+        padding-top: 50px;
+    }
+    .main-section .overlay h2{
+        color: #FFF;
+        border-bottom:1px solid;
+        width:23%;
+        margin: 0 auto 50px;
+    }
+    
+    .main-section .overlay input[type=text]{
+      width: 400px;
+      box-sizing: border-box;
+      border: 2px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+      background-color: white;
+      background-position: 10px 10px;
+      background-repeat: no-repeat;
+      padding: 4px 20px 4px 40px;
+      -webkit-transition:0.4s ease-in-out;
+      transition:0.4s ease-in-out;
+      font-weight: bold;
+    }
+    
+    
+    .main-section .overlay input[type=text]:focus {
+        width: 500px;
+        padding: 8px 20px 8px 40px;
+      }
+    
+    
+      .main-section .overlay input[type=submit] {
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+        background-color: white;
+        background-position: 10px 10px;
+        background-repeat: no-repeat;
+        padding: 5px;
+        font-weight: bold;
+      }    
+    /* Auto Complete */
+    
+    .autocomplete {
+        position: relative;
+        display: inline-block;
+    }
+    .autocomplete-items {
+        position: absolute;
+        border: 1px solid #d4d4d4;
+        border-bottom: none;
+        border-top: none;
+        z-index: 99;
+        top: 100%;
+        left: 0;
+        right: 0;
+    }
+    .autocomplete-items div {
+        padding: 10px;
+        cursor: pointer;
+        background-color: #fff;
+        border-bottom: 1px solid #d4d4d4;
+    }
+    .autocomplete-items div:hover {
+        /*when hovering an item:*/
+        background-color: #e9e9e9;
+    }
+    .autocomplete-active {
+        /*when navigating through the items using the arrow keys:*/
+        background-color: DodgerBlue !important;
+        color: #ffffff;
+    }
+}
