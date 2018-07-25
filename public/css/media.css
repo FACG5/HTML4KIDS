@@ -91,6 +91,11 @@
         background-color: DodgerBlue !important;
         color: #ffffff;
     }
+
+
+    #infodiv p:nth-child(5){
+
+    }
 }
 /*****************************************************************************/
 @media(min-width:601px) 
@@ -373,7 +378,7 @@ and (max-width:1000px){
     .autocomplete-items div {
         padding: 10px;
         cursor: pointer;
-        background-color: #fff;
+        /*background-color: #fff;*/
         border-bottom: 1px solid #d4d4d4;
     }
     .autocomplete-items div:hover {
