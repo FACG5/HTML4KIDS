@@ -47,7 +47,6 @@ function serveAPI(req, res) {
   req.on("end", function() {
     var result = filterJson(mainJson,like);
     res.writeHead(200, { "content-type": "application/json" });
-    console.log(result);
     res.end(JSON.stringify(result));
   });
 }
@@ -59,11 +58,6 @@ function serveInfoAPI(req, res) {
   });
   req.on("end", function() {
     res.writeHead(200, { "content-type": "Text/plain" });
-    // console.log(tag);
-    // console.log(JSON.stringify(infoObject[tag]));
-    // console.log(typeof infoObject);
-    // console.log(infoObject);
-
     res.end(JSON.stringify(infoObject[tag]));
   });
 }

@@ -80,12 +80,3 @@ test('handlers - filterJson', function(t) {
     t.deepEqual(filterJson( arr, searchQuerySanitized), expected);
     t.end();
   });
-
-  
-
-
-test('test ', function(t) {
-
-        t.equal('1','1',"ssss");
-        t.end();
-      });
