@@ -34,22 +34,26 @@ inp.addEventListener("input", function(e) {
             /////to be added here
             connect(inp.value,'POST','/api/info',function(response){
 
-              infodiv.innerHTML = "";
-              var definition_title = document.createElement('h2');
-              var usage_title = document.createElement('h2');
-              var url_title = document.createElement('h2');
-              var example_title = document.createElement('h2');
+              infodiv.textContent = "";
+              infodiv.style.display = "block";
+              var definition_title = document.createElement('h3');
+              var usage_title = document.createElement('h3');
+              var url_title = document.createElement('h3');
+              var example_title = document.createElement('h3');
 
-              definition_title.textContent = 'Definition'
-              usage_title.textContent = 'Usage'
-              url_title.textContent = 'URL'
-              example_title.textContent = 'Example'
+              definition_title.textContent = 'Definition';
+              usage_title.textContent = 'Usage';
+              url_title.textContent = 'URL';
+              example_title.textContent = 'Example';
 
               var definition = document.createElement('p');
               var usage = document.createElement('p');
-              var url = document.createElement('p');
-              var example = document.createElement('p');
-
+              var url = document.createElement('a');
+              url.href = response.url;
+              url.target = '_blank';
+              var example = document.createElement('a');
+                example.href = response.url;
+                example.target = '_blank';
               definition.textContent = response.definition;
               usage.textContent = response.usage;
               url.textContent = response.url;
@@ -66,6 +70,7 @@ inp.addEventListener("input", function(e) {
               
               infodiv.appendChild(example_title);
               infodiv.appendChild(example);
+
 
             });
             closeAllLists();
@@ -117,7 +122,3 @@ function closeAllLists(elmnt) {
 document.addEventListener("click", function(e) {
   closeAllLists(e.target);
 });
-//
-//
-// var words = ["select","details","dialog","menu","menuitem","summary","content","element","shadow","template","acronym","applet","basefont","big","blink","center","dir","frame","frameset","isindex","listing","noembed","plaintext","spacer","strike","tt","xmp"];
-// autocomplete(document.getElementById("myInput"), words);
