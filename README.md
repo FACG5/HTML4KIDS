@@ -97,6 +97,22 @@ As a **user**
 
 ---
 
+## Hint:
+Please note that this site is under development. Some html tags are not ready yet.
+the Following group of tags are ready:
+* title
+* article
+* head
+* style
+* footer
+* nav
+* span
+* li
+* div
+* button
+
+---
+
 ## WHO ARE WE ?
 
  * **Asmaa** Almadhoon
