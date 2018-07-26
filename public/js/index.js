@@ -1,6 +1,8 @@
 var currentFocus;
 var inp = document.getElementById("myInput");
 var infodiv = document.getElementById("infodiv");
+
+
 inp.addEventListener("input", function(e) {
   var val = inp.value;
     infodiv.style.display = "none";
@@ -10,7 +12,7 @@ inp.addEventListener("input", function(e) {
     "POST",
     "/api/suggestions",
     function(arr) {
-      var a,
+        var a,
         b,
         i,
         val = inp.value;
@@ -108,6 +110,9 @@ inp.addEventListener("keydown", function(e) {
     }
   }
 });
+inp.onblur=function(){
+    infodiv.style.display = "block";
+};
 function addActive(x) {
   if (!x) return false;
   removeActive(x);
